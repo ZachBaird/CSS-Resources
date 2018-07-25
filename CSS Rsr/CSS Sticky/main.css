@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #D8F7FF;
+  font-family: 'Montserrat';
+}
+
+section {
+  display: grid;
+  grid-template-columns: 30% auto;
+}
+
+figure {
+  background: #BBE2ED;
+  margin: 0;
+  text-align: center;
+}
+
+article {
+  padding: 2em;
+}
+
+h3 {
+  font-size: 3em;
+  margin-top: 0;
+}
+
+p {
+  line-height: 2em;
+}
+
+img {
+  width: 250px;
+  /* This bit already makes it work. We set the position with the usual and vendor values, and
+     then we establish the required top value */
+  position: sticky;
+  position: -webkit-sticky;
+  top: 20px;
+  /* Look up */
+}

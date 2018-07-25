@@ -1,0 +1,50 @@
+body {
+  background: #333;
+}
+
+.box {
+  background: white;
+  width: 200px;
+  height: 200px;
+  /* because we'll be moving it around */
+  position: relative;
+
+  /* setting animation name and duration */
+  animation-name: myanimation;
+  animation-duration: 4s;
+
+  /* we can tell it how many times to run 
+  possible values:
+    -number
+    -infinite*/
+  /* animation-iteration-count: infinite; */
+
+  /* we can delay it */
+  /* animation-delay: 2s; */
+
+  /* we can change the direction
+  possible values:
+    -reverse
+    -alternate */
+  /* animation-direction: alternate; */
+
+  /* we can smooth the timing 
+  possible values:
+    -linear
+    -ease-in
+    -ease-out*/
+  animation-timing-function: linear;
+
+  /* if you want it to remain a circle (in it's final state) */
+  animation-fill-mode: forwards;
+}
+
+/* the actual animation and what it does */
+@keyframes myanimation {
+  /* runs from 0% state to 100% state.  note that we have to  animate each step.  for example, if we didn't animate the last step, it would just pop back to its initial position  */
+  0% {background-color: white; left: 0px; top: 0px; border-radius: 0 0 0 0;}
+  25% {background-color: red; left: 300px; top: 0px; border-radius: 50% 0 0 0;}
+  50% {background-color: green; left: 300px; top: 300px; border-radius: 50% 50% 0 0;}
+  75% {background-color: blue; left: 0px; top: 300px; border-radius: 50% 50% 50% 0;}
+  100% {background-color: white; left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
+}

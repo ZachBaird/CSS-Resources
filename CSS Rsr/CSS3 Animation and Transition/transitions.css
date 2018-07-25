@@ -1,0 +1,26 @@
+body {
+  background: #333;
+}
+
+.box {
+  background: white;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  /* margin auto puts it in the middle */
+  margin: auto;
+  top: 200px;
+
+  /* setting the transition property we're playing with and it's duration.  Now, when we hover, it transitions with these properties.  We can set it to 'all' to perform all the :hover stuff in one go */
+  /* note that we can separate what properties are changing at what speeds, respectively. */
+  transition-property: background, border-radius, transform;
+  transition-duration: 1s, 3s;
+  /* transition-delay: 2s, 4s; */
+  transition-timing-function: linear;
+}
+
+.box:hover {
+  background: red;
+  border-radius: 50%;
+  transform: rotateY(180deg);
+}

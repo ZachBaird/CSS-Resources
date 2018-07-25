@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <aside>
+    <figure>
+      <div id="avatar"></div>
+      <figcaption>Johnny Doe</figcaption>
+    </figure>
+    <div class="container" id="menu-icon" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main>
+    <h1>I'm a designer of things</h1>
+    <p>You design this thing and then make it a reality in the web experience! Imagine the possibilities of your new skill.</p>
+    <a href="#" class="cta">my portofolio</a>
+  </main>
+  <script>
+    const myFunction = (x) => {
+      x.classList.toggle('change');
+
+      let menu = document.querySelector('ul');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

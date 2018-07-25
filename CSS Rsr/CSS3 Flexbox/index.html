@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex CSS</title>
+</head>
+<body>
+  <style>
+  .container-1 {
+    /* enables flex styles */
+    display: flex;
+    /* we can align items to whatever side of the container we want #flex-start, flex-end, etc. by default is stretch */
+    align-items: stretch;
+    /* we can change the direction as well
+    flex-direction: column;
+    */
+  }
+  .container-1 div {
+    border: 1px #ccc solid;
+    padding: 10px;
+  }
+  .box-1 {
+    /* width of screen it takes up */
+    flex: 2;
+  }
+  .box-2 {
+    flex: 1;
+  }
+  .box-3 {
+    flex: 1;
+  }
+  /* we can also use 'order' to decide the order these flex boxes appear in.  orders: 1, 2, 3 */
+  </style>
+  
+  <div class="container-1">
+    <div class="box-1">
+      <h3>Box One</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, cum recusandae. Repellat quisquam unde optio magnam dolores minima ipsum eum?</p>
+    </div>
+    <div class="box-2">
+      <h3>Box Two</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus atque architecto doloremque ab nisi vel exercitationem dolorum laboriosam et reiciendis.</p>
+    </div>
+    <div class="box-3">
+      <h3>Box Three</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium provident obcaecati iste cupiditate nam in modi ad error necessitatibus sed.</p>
+    </div>
+  </div>
+</body>
+</html>

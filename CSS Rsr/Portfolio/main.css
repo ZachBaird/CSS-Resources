@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* Foundation */
+body, html {
+  height: calc(100% - 2em);
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+body {
+  background: #4a00fb; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #4a00fb 0%, #e600ff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #4a00fb 0%, #e600ff 100%); /* Chrome10-25, Safari */
+  background: linear-gradient(45def, #4a00fb 0%, #e600ff 100%); /* WSC, IE10+, FF16+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a00fb', endColorstr='#e600ff');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Menu Icon */
+#menu-icon {
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #FFF;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Upper aside(mobile) left column (desktop) */
+aside {
+  color: #FFF;
+  display: grid;
+  grid-template-columns: auto 40px;
+  padding: 2em;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* Nav */
+nav {
+  background: #FFF;
+}
+
+.active {
+  position: absolute;
+  display: block;
+  background: #FFF;
+  width: 50%;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  display: block;
+  padding: 1.5em 3em;
+  background-color: rgba(255, 255, 255, 0.35);
+  color: #000;
+}
+
+/* Main Section */
+main {
+  background: #FFF;
+  padding: 1em 1.4em;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.cta {
+  display: block;
+  color: #FFF;
+  background: #0E7FFF;
+  text-decoration: none;
+  padding: 8px 50px;
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 2em 0;
+}
+
+/* Media Queries for bigger screens */
+@media only screen and (min-width: 768px) {
+  /* Foundation changes */
+  body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    padding: 2em;
+  }
+
+  /* Menu changes */
+  #menu-icon {
+    display: none;
+  }
+
+  /* Side column changes */
+  aside {
+    background: #DCE1F6;
+    grid-template-columns: auto;
+    grid-template-rows: 20% auto;
+    padding: 0;
+  }
+
+  /* Main section changes */
+  main {
+    padding: 4em;
+    background: #FFF;
+  }
+
+  /* Avatar styling */
+  #avatar {
+    border-radius: 50%;
+    background: #FFF;
+    width: 50px;
+    height: 50px;
+    margin: 2em auto 1em auto;
+  }
+
+  figcaption {
+    text-align: center;
+    color: #000;
+  }
+
+  ul {
+    display: block;
+    margin-top: 2em;
+    /* Resetting the CSS values from mobile. Think about the style persisting
+       when user goes from portrait mode to landscape mode. */
+    position: relative !important;
+    background: none !important;
+    width: 100% !important;
+  }
+  
+  ul li a:hover {
+    background-color: #fff;
+  }
+
+  nav {
+    background: none;
+  }
+
+  .cta {
+    display: inline-block;
+    font-size: 1.3em;
+    padding: .8em 3em;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-top: 2em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+}

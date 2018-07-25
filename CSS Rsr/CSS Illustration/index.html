@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>4th of July</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="container">
+    <h3>Let's make Freedom..</h3>
+    <h1>HAPPY 4TH</h1>
+    <h3>..Great Again!</h3>
+  </div>
+
+
+
+<div class="container" style="margin-bottom: 80px">
+  <div class="row lancaster-hm1 jbc-contents">
+    <div class="col-md-8 col-sm-12 fist-divs">
+      <cms:CMSWebPartZone ZoneID="ZoneLGHJobTitle" runat="server" />
+      <cms:CMSWebPartZone ZoneID="ZoneLGHDescription" runat="server" />       
+    </div>
+    <div class="col-md-3 col-sm-12 jbc-contents-imgs">
+      <cms:CMSWebPartZone ZoneID="ZonePhysicianOpportunitiesImage" runat="server" />
+    </div>
+  </div>
+  
+  <div class="container" style="margin-bottom: 80px">
+    <div class="row lancaster-hm1 jbc-contents">
+      <div class="col-md-8 col-sm-12 fist-divs">
+        <cms:CMSWebPartZone ZoneID="ZoneNursingTitle" runat="server" />
+        <cms:CMSWebPartZone ZoneID="ZoneLGHSubTitle" runat="server" />
+
+        <div class="row jbc_company_career">
+          <cms:CMSWebPartZone ZoneID="ZoneMainJobInfo" runat="server" />
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-12 jbc-contents-imgs">
+        <cms:CMSWebPartZone ZoneID="ZoneNursingOpportunitiesImage" runat="server" />
+      </div>
+  </div>
+  
+  <div class="jalgh-joblists" id="faqs">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <cms:CMSWebPartZone ZoneID="ZoneJobsTitle" runat="server" />
+      </div>
+
+      <div class="row" style="margin: 0">
+        <div id="search-yourjob">
+          <div class="search">
+            <cms:CMSWebPartZone ZoneID="ZoneJobSearch" runat="server" />
+          </div>
+        </div>
+      </div>
+
+      <div class="row jalgh-jobs">
+        <div class="col-md-4 col-sm-12" id="filters" >
+          <cms:CMSWebPartZone ZoneID="ZoneCompanies" runat="server" />
+          <div class="sortings-jobs-more">  
+          </div>
+          <cms:CMSWebPartZone ZoneID="ZoneJobType" runat="server" />
+        </div>
+        <div class="col-md-8 col-sm-12 sort-joblists">
+          <cms:CMSWebPartZone ZoneID="ZoneAllJobs" runat="server" />
+        </div>   
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row lancaster-hm1 jbc-contents">
+  <div class="col-md-8 col-sm-12 shotlength">
+    <cms:CMSWebPartZone ZoneID="ZoneLGH MainJobTitle" runat="server" />
+    <cms:CMSWebPartZone ZoneID="ZoneLGHDMainescription" runat="server" />
+    <div class="row jbc_company_career">
+      <cms:CMSWebPartZone ZoneID="ZoneMainJobInfo" runat="server" />
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-12 jbc-contents-imgs">
+    <cms:CMSWebPartZone ZoneID="ZoneNursingImage" runat="server" />
+  </div>
+</div>
+
+<div class="row lancaster-hm1 jbc-contents">
+  <div class="col-md-8 col-sm-12 shotlength">
+    <cms:CMSWebPartZone ZoneID="ZonePracticeTitle" runat="server" />
+    <cms:CMSWebPartZone ZoneID="ZonePracticeDescription" runat="server" />
+
+    <div class="row jbc_company_career">
+      <cms:CMSWebPartZone ZoneID="ZoneMainJobInfo" runat="server" />
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-12 jbc-contents-imgs">
+    <cms:CMSWebPartZone ZoneID="ZonePracticeImage" runat="server" />
+  </div>
+</div>
+
+<div class="row lancaster-hm1 jbc-contents">
+  <div class="col-md-8 col-sm-12 shotlength">
+    <cms:CMSWebPartZone ZoneID="ZoneHealthTitle" runat="server" />
+    <cms:CMSWebPartZone ZoneID="ZoneHealthDescription" runat="server" />
+
+    <div class="row jbc_company_career">
+      <cms:CMSWebPartZone ZoneID="ZoneMainJobInfo" runat="server" />
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-12 jbc-contents-imgs">
+    <cms:CMSWebPartZone ZoneID="ZoneHealthImage" runat="server" />
+  </div>
+</div>
+<!-- Search for your perfect job -->
+<div class="container-fluid">
+  <div class="row search-job">
+    <div class="container search-job-contents">
+      <div class="col-md-6 col-sm-12">
+        <cms:CMSWebPartZone ZoneID="ZoneSeachTitle" runat="server" />
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <form id="search-yourjob" action="" class="hidden-xs" method="get">
+          <div class="form-group search">
+            <cms:CMSWebPartZone ZoneID="ZoneSearch" runat="server" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

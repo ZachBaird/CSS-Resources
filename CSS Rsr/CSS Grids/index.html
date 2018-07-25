@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grids</title>
+  <style>
+    .wrapper {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      grid-gap: 1em;
+    }
+
+    .wrapper>div {
+      background: #eee;
+      padding: 1em;
+    }
+
+    .wrapper>div:nth-child(odd) {
+      background: #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minus ut dignissimos accusantium minima eius distinctio
+      nemo velit veritatis. Vel, totam quam veniam aliquid quae magnam? Officia possimus similique cupiditate necessitatibus
+      illo temporibus praesentium, unde mollitia soluta officiis, voluptate vero non vitae nihil suscipit natus ut voluptatum
+      saepe harum maxime cumque tempore vel! Quia dolor, velit dolore repellat adipisci aliquid asperiores ab nisi aperiam
+      ad facere laudantium molestias sed aspernatur quis ut voluptatem cum fugit. Sed quod earum vel debitis!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis veritatis, doloribus sit dignissimos fugit illum aspernatur
+      tempore omnis magnam saepe ut neque atque. Quo, repellendus cupiditate atque natus soluta distinctio!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum minus ut dignissimos accusantium minima eius distinctio
+      nemo velit veritatis. Vel, totam quam veniam aliquid quae magnam? Officia possimus similique cupiditate necessitatibus
+      illo temporibus praesentium, unde mollitia soluta officiis, voluptate vero non vitae nihil suscipit natus ut voluptatum
+      saepe harum maxime cumque tempore vel! Quia dolor, velit dolore repellat adipisci aliquid asperiores ab nisi aperiam
+      ad facere laudantium molestias sed aspernatur quis ut voluptatem cum fugit. Sed quod earum vel debitis!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis veritatis, doloribus sit dignissimos fugit illum aspernatur
+      tempore omnis magnam saepe ut neque atque. Quo, repellendus cupiditate atque natus soluta distinctio!
+    </div>
+  </div>
+</body>
+
+</html>
